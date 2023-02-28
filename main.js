@@ -4,12 +4,12 @@ let perfect =[];
 for(i=0; i<array.length; i++){
     number = array[i];
 	 var m=0;
-	for(j=1; j<=number; j++){
+	for(j=1; j<number; j++){
 	     if(number%j == 0){
 		     m+=j;
 		 }
 	 }
-	 if(m/2 === number && m !== 0){
+	 if(m === number){
 	     perfect.push(number);
 	 }
  }
